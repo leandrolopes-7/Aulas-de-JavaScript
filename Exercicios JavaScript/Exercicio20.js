@@ -50,15 +50,15 @@ function calcValorNotas(valorSaque){
 function elaborarResultado(nota100, nota50, nota10, nota5, nota1){
     let resultado = ''
     if(nota100 > 0){
-        resultado += `${nota100} de R$:100,00`
-    }else if(nota50 > 0){
-        resultado += `${nota50} de R$:50,00`
-    }else if(nota10 > 0){
-        resultado += `${nota10} de R$10,00`
-    }else if(nota5 > 0){
-        resultado += `${nota5} de R$5,00`
-    }else if(nota1 > 0){
-        resultado += `${nota1} de R$1,00` 
+        resultado += `${nota100} de R$:100,00\n`
+    }if(nota50 > 0){
+        resultado += `${nota50} de R$:50,00\n`
+    }if(nota10 > 0){
+        resultado += `${nota10} de R$10,00\n`
+    }if(nota5 > 0){
+        resultado += `${nota5} de R$5,00\n`
+    }if(nota1 > 0){
+        resultado += `${nota1} de R$1,00\n` 
     }
     return resultado
 }
